@@ -1,0 +1,213 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 0 2rem;
+    background-color: white;
+}
+
+.h-btn{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(88, 26, 145);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* cards */
+
+.section-list {
+    width: calc(100%-5rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 2rem;
+    width: 350px;
+    height: 310px;
+    border: solid 0.5px rgb(29, 29, 29);
+    border-radius: 5px;
+    background-color: rgb(249, 246, 246);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.l-h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.l-span {
+    color: rgb(167, 162, 162);
+    font-weight: bold;
+}
+
+.l-svg {
+    width: 30px;
+    height: 25px;
+}
+
+.l-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 40px;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.l-btn-1 {
+    margin-top: 2.5rem;
+    width: 30px;
+    border: none;
+    background-color: rgb(231, 41, 41);
+    color: white;   
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.l-btn-2 {
+    margin-top: 2.5rem;
+    width: 30px;
+    width: 30px;
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* form */
+.section-input {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.541);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    height: 480px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 1rem;
+    gap: 0.5rem;
+}
+
+.f-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.f-title {
+    display: block;
+    font-size: 25px;
+}
+
+.exit {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.f-input {
+    border: solid 0.5px rgb(29, 29, 29);
+    padding: 2px 15px;
+    width: 280px;
+}
+
+.f-btn {
+    border: none;
+    background-color: rgb(88, 26, 145);
+    color: white;
+    width: 280px;
+    height: 1.9rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 820px)  {
+    ul {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .form {
+        height: 480px;
+        width: 350px;
+    }
+
+    .f-input {
+        border: solid 0.5px rgb(29, 29, 29);
+        padding: 5px 15px;
+        width: 300px;
+    }
+
+    .f-btn {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1300px)  {
+    ul {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
