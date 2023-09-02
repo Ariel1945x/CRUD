@@ -12,7 +12,7 @@ function App() {
 
   const getAll = () => {
     axios
-      .get("https://users-crud.academlo.tech/users/")
+      .get("https://users-crud-api-j3x6.onrender.com/users")
       .then(resp => {
         setUsers(resp.data)
       })
@@ -25,7 +25,7 @@ function App() {
 
   const addUser = user => {
     axios 
-    .post(`https://users-crud.academlo.tech/users/`, user)
+    .post(`https://users-crud-api-j3x6.onrender.com/users`, user)
     .then(() => {
       getAll()
     })
@@ -34,7 +34,7 @@ function App() {
 
   const deleteUser = user => {
     axios 
-      .delete(`https://users-crud.academlo.tech/users/${user}/`)
+      .delete(`https://users-crud-api-j3x6.onrender.com/users/${user}`)
       .then(() => {
         getAll()
       })
@@ -47,7 +47,7 @@ function App() {
 
   const editUser = user => {
     axios
-      .put(`https://users-crud.academlo.tech/users/${user.id}/`, user)
+      .put(`https://users-crud-api-j3x6.onrender.com/users/${user.id}`, user)
       .then(() => {
         getAll()
       })
